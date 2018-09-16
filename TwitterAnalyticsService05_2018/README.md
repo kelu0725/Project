@@ -7,7 +7,7 @@ This is a team project completed by Long Wang, Bingting Wang, Ke Lu in 05/2018.
 ## ETL
 Data Source: JSON Twitter dataset of tweets, stored on S3, containing about 200 million tweets
 ### Steps
-* Data Cleaning: remove duplicates, handle malformed data, remove stop words. (Python/Spark)
+* Data Cleaning: remove duplicates, handle malformed data, remove stop words. (Python/Streaming)
 * Transform: accomodate to desired schema. (MapReduce)
 * Load: import in MySQL(SQL script) and Hbase (Java)
 ## Web Server
@@ -18,8 +18,8 @@ Data Source: JSON Twitter dataset of tweets, stored on S3, containing about 200 
 ### Query3 Consisten Read/Write Query
 * Please read [README.md](https://github.com/kelu0725/Project/blob/master/TwitterAnalyticsService05_2018/phase3/README.md)
 ## Deployment
-* GCP - run MapReduce
-* EMR - Hbase Database
+* GCP - run Streaming - 13 hrs
+* EMR - Hbase Database - 
 * AWS - run Backend and Frontend server
 ## Built With
 * [Undertow](http://undertow.io/) - Web Framework used.
