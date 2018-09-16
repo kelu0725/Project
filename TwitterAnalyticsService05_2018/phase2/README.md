@@ -1,13 +1,11 @@
 # Range Query and Topic Word Extraction
 ## Requirements
-For this query, we will make requests to your server that have a time range, uid range, the maximum number of topic words (n1), and the maximum number of tweets that should be returned (n2).
-
-You will have to:
-
+Request: time range, uid range, the maximum number of topic words (n1), and the maximum number of tweets that should be returned (n2).
+Tasks:
 * Find all the tweets posted by a user within the uid range AND within the given time range. 
-* Calculate the topic score, which is a modified version of TF-IDF (described later).
+* Calculate the topic score, which is a modified version of TF-IDF.
 * Sort and return at most n1 topic words and return them along with at most n2 sorted tweets, which must contain at least one of those n1 topic words.
-
+* Target Throughput: 1500 rps
 Sample Request:
 ```
 http://dns.of.instance/q3?uid_start=2317544238&uid_end=2319391795&time_start=1402126179&time_end=1484854251&n1=10&n2=8
@@ -30,4 +28,4 @@ Follow me &amp; @nikystylees to be next
 ```
 ## Designs
 
-* **Target Throughput**: 1500 rps
+
