@@ -63,19 +63,22 @@ Follow me &amp; @nikystylees to be next
 #### Designs
 
 **Target Throughput**: 1500 rps
+
 ### Query3 Consisten Read/Write Query
 READ/WRITE/SET/DELETE
+
 **Target Throughtput**:
-Q1 28000 
-Q2 8000
-Q3 1500
+Q1 28000.
+Q2 8000.
+Q3 1500.
 
 ## Deployment
 GCP - run MapReduce
 EMR - Hbase Database
 AWS - run Backend and Frontend server
+
 ## Built With
-* [Undertow](http://undertow.io/) - Web Framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
+* [Undertow](http://undertow.io/) - Web Framework used.
+* [Maven](https://maven.apache.org/) - Dependency Management.
 
 
