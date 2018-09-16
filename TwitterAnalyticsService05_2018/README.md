@@ -11,12 +11,18 @@ Data Source: JSON Twitter dataset of tweets, stored on S3, containing about 200 
 * Transform: accomodate to desired schema. (MapReduce)
 * Load: import in MySQL(SQL script) and Hbase (Java)
 ## Web Server
-### Query1 Hashtag Recommendation
+### Requirements
+#### Hashtag Recommendation
 * Please read [README.md](https://github.com/kelu0725/Project/blob/master/TwitterAnalyticsService05_2018/phase1/README.md)
-### Query2 Range Query and Topic Word Extraction
+#### Range Query and Topic Word Extraction
 * Please read [README.md](https://github.com/kelu0725/Project/blob/master/TwitterAnalyticsService05_2018/phase2/README.md)
-### Query3 Consisten Read/Write Query
+#### Consisten Read/Write Query
 * Please read [README.md](https://github.com/kelu0725/Project/blob/master/TwitterAnalyticsService05_2018/phase3/README.md)
+### Optimization
+#### Hbase
+1. Rowkey: as compressed as possible; put important information into rowkey, because rowkey is the only identifier used for searching.
+2. 
+
 ## Deployment
 * GCP - run Streaming - 13 hrs
 * EMR - Hbase Database - 
