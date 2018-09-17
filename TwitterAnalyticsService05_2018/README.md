@@ -20,9 +20,12 @@ Data Source: JSON Twitter dataset of tweets, stored on S3, containing about 200 
 * Please read [README.md](https://github.com/kelu0725/Project/blob/master/TwitterAnalyticsService05_2018/phase3/README.md)
 ### Optimization
 #### Hbase
-1. Rowkey: as compressed as possible; put important information into rowkey, because rowkey is the only identifier used for searching.
-2. 
-
+1. Rowkey: as small as possible (e.g. compressed string); put important information into rowkey, because rowkey is the only identifier used for searching.
+2. Region Servers Split: observe the traffic and divide regions manually
+3. Use GET operation instead of SCAN
+4. Configuration: block cache
+#### MySQL
+1. 
 ## Deployment
 * GCP - run Streaming - 13 hrs
 * EMR - Hbase Database - 
