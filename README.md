@@ -16,10 +16,10 @@ About ~1 TB raw twitter data is provided. The dataset will have to be stored wit
 -----------
 The web service solution provides data analysis on the twitter dataset. Users can query resutls based on **userids or time**bold.
 - Web Service (API server) should be able to query through HTTP GET request and get response for following:
-  * 0. Test web service connection phase, encoding and decoding QR codes.
-  * 1. Predict hashtags for a new tweet by a particular user based on all tweets information.
-  * 2. Calculate the topic score of requested tweet(specific time range) based on TF-IDF algorithnms. Return highest topic words and tweets.
-  * 3. Implement fast interactive service based on MySQL, included read, wirite, set and delete.
+  * Test web service connection phase, encoding and decoding QR codes.
+  * Predict hashtags for a new tweet by a particular user based on all tweets information.
+  * Calculate the topic score of requested tweet(specific time range) based on TF-IDF algorithnms. Return highest topic words and tweets.
+  * Implement fast interactive service based on MySQL, included read, wirite, set and delete.
 
 - Database Server should be able to handle large concurrent read requests
 
