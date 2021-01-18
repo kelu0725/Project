@@ -14,8 +14,8 @@ Language & Framework
 
 Development Requirement
 -----------
-The web service solution provides data analysis on the twitter dataset. Users can query resutls based on **userids or time**bold.
-- Web Service (API server) should be able to query through HTTP GET request and get response for following:
+The web service solution provides data analysis on the twitter dataset. Users can query resutls based on userids or time.
+- Web Service (API server) should be able to request via HTTP methods and get response for following:
   * Test web service connection phase, encoding and decoding QR codes.
   * Predict hashtags for a new tweet by a particular user based on all tweets information.
   * Calculate the topic score of requested tweet(specific time range) based on TF-IDF algorithnms. Return highest topic words and tweets.
